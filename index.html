@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dicionário Wai Wai</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Dicionário Wai Wai</h1>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <nav id="menu" class="hidden">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="#" onclick="logout()">Sair</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Traduzir Termo</h2>
+    <input type="text" id="translateInput" placeholder="Digite uma palavra" />
+    <button onclick="translate()">Traduzir</button>
+    <div id="translationResult"></div>
+  </main>
+</body>
+</html>
